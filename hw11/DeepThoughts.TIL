@@ -1,0 +1,36 @@
+// Yedoh Kang
+// APCS2 pd1
+// HW11 — Probing the Depths…
+// 2017-03-02
+
+  Mean execution times for boards of size n*n:
+  n=5   0.178s    over 3 executions 
+  n=6   0.242s    over 3 executions
+  n=7   0.511s    over 3 executions
+  n=8   0.509s    over 3 executions
+
+Section Uno:
+
+Q1: From any starting position, can an open tour always be found?
+No, because when I ran the code for the random starting location, sometimes a solution was shown, but other times, the board was still filled with 0’s, showing that there was no solution. 
+
+Q2: Same, but for closed tour.
+No, because when I ran the code for the 5 x 5 board many times, there were many solutions where it wasn’t a closed tour. 
+
+Q3: How do you explain the increase in execution time as n increases?
+There is an increase in execution time as n increases because there are more possibilities for the moves, in which the class has to recurse through the method many more times if the correct solution isn’t found.
+
+Q4: Thoughts on optimization?
+I don’t really have something concrete for optimization, but it would be great if there was a way to shorten the time. Although it currently doesn’t take long, looking very closely, as n increases, the class takes more time to run. In addition, I feel as if it is inefficient (not completely, however) that the method has to recurse through each recursion written inside the method, then recurse through each one of the ones inside.
+
+
+Section Deux:
+
+Algo for finding a way out of a maze:
+start at the beginning of the maze
+have walls be -1, have wrong moves be -2, and have correct moves (counter, increment)
+check if the placeholder has solved the maze, then return true
+if not,
+check if the placeholder is already in use, is a wall, or is wrong
+if it is, backtrack
+if it isn’t, increment the move number (nth step), and recurse the function with an increment of one unit in that direction, checking all four directions and its boundary conditions

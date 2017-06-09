@@ -1,0 +1,25 @@
+// Yedoh Kang
+// APCS2 pd1
+// HW39 -- Heaping Piles of Sordidness
+// 2017-05-11
+
+public class HeapSort {
+
+    // heapify a subtree, where is the index of the root of the array
+    public void heapify (int[] arr, int i) {
+
+	int largest = i;
+	int l = 2*i + 1;
+	int r = 2*1 + 2;
+
+	if ((r < arr.length) && (arr[r] > arr[largest])) {
+	    largest = r;
+	}
+
+    }
+
+
+
+
+
+} // end of class

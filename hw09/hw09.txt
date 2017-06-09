@@ -1,0 +1,11 @@
+// Yedoh Kang
+// APCS2 — pd1
+// HW09 — Get On the Bus
+// 2017-02-28
+
+start at the top left corner
+place a 0
+check if the knight has toured all the cells, then return true
+if not, 
+check if the current square is already in use or not
+if it isn’t, increment n by 1 (for the nth step) and recurse the function with index + 1, checking all 8 directions and its boundary conditions

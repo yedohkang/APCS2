@@ -1,0 +1,34 @@
+// Yedoh Kang
+// APCS2 pd1
+// HW33 — A Tree Grows in 251
+// 2017-04-27
+
+Preorder (root, left, right)
+- first one is the root of the entire tree
+- next one is the root of the left/right subtree
+
+Inorder: (left, root, right)
+- nodes left of the root of the entire tree makes up the left subtree
+- nodes right of the root of the entire tree makes up the right subtree
+- first one is the leftmost node
+
+Postorder: (left, right, root)
+- last one is the root of the entire tree
+- first one is the leftmost node
+
+
+SO:
+for example:
+Preorder: A B D E C F
+Inorder: D B E A F C
+
+—> The root of the tree is A
+—> D B E makes up the left subtree and F C makes up the right subtree
+—> preorder is root, left, right so for the left subtree, B would be the root, D would be the left node and E would be the right
+—> inorder is left, root, right, so for the left subtree, D would be the left node, B would be the root, and E would be the right node, which is the same thing as the preorder traversal
+—> preorder is root, left, right so for the right subtree, C would be the root and F would be the left node
+—> inorder is left, root, right, so for the right subtree, F would be the left node and C would be the root, which is the same thing as the preorder traversal
+
+THIS also goes for ANY combination with inorder traversal
+
+However, we NEED the inorder traversal to reconstruct a binary tree because ONLY the inorder traversal tells the user the subdivisions of the tree

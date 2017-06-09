@@ -1,0 +1,34 @@
+// Yedoh Kang
+// APCS2 pd1
+// HW07 — Xiang’s Troubles
+// 2017-02-16
+
+*rotations count as a solution
+
+a) 2x2
+	There can be at most 1 queen on the board because it removes all positions.
+	There are no solutions.
+
+b) 3x3
+	There can be at most 2 queens on the board. After the second queen is placed, there are no more empty positions.
+	There are no solutions.
+
+c) 4x4
+	There can be at most 4 queens on the board. I solved it, and found out that other solutions could be found by rotating the board by 90 degrees, and also by reflecting it from that position.
+	There are 8 solutions.
+
+d) 5x5
+	There can be at most 5 queens on the board. I solved it, and unlike the 4x4, the rotations by 90 degrees do not work.
+	There are 2 solutions (the original and its reflection).
+
+e) 6x6
+	There can be at most 6 queens on the board due to induction with previous cases.
+	There are 8 solutions. (may be missing some)
+
+f) 7x7
+	There can be at most 7 queens on the board due to induction with previous cases.
+	There are ____ solutions. (don’t know yet)
+
+g) 8x8
+	There can be at most 8 queens on the board. 
+	There are ____ solutions. (don’t know yet)
